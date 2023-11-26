@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="./css/tiny-slider.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="./css/mobile.css" />
-    <link rel="stylesheet" media="screen and (max-width: 660px)" href="./css/mobile-660.css" />
-    <link rel="stylesheet" media="screen and (max-width: 770px)" href="./css/mobile-770.css" />
-    <link rel="stylesheet" media="screen and (max-width: 960px)" href="./css/mobile-960.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OASIS</title>
     <meta name="description" content="Oasis is a monitoring system that helps you to monitor your server status and prevent incidents. It is a free status page for monitoring your server status. It is easy to integrate and setup. It works on phone and all devices. It is a reliable monitoring system. It is easy to track all your stats. It is trusted by many companies. It has brought clarity to our architecture. It provides a robust synopsis of our service statuses. It has a crash rate of 89%. It has an error reporting API uptime of 100. It has an average latency of 1.98ms. It has an A/B split of A/B. It has a general API of 81rps. It has a data access API of 93%. It has a health check on the latest selected time range of OK. It has an average ping up time of selected time range of 95%. It has an average latency in the selected time range of 19ms. It has an average packet lost in selected time range of 0.1. It has an error rate of bit transmission in selected time range of 0.02%." />
@@ -126,16 +122,16 @@
       <div class="flex--horizontal">
         <div class="features__left aligner flex--vertical">
           <div class="flex--vertical fadeInLeft fadeInLeft--0">
-            <object type="image/svg+xml" data="./images/features-circle.svg" class="svg"></object>
-            <p>Performance issues such as throughput and end-to-end delay are also addressed.</p>
+            <object aria-labelledby="info1" type="image/svg+xml" data="./images/features-circle.svg" class="svg"></object>
+            <p id="info1">Performance issues such as throughput and end-to-end delay are also addressed.</p>
           </div>
           <div class="flex--vertical fadeInLeft fadeInLeft--1">
-            <object type="image/svg+xml" data="./images/features-polygon.svg" class="svg"></object>
-            <p>Many systems can be characterized as dominated either by throughput limitations or by latency limitations in terms of end-user utility or experience.</p>
+            <object aria-labelledby="info2" type="image/svg+xml" data="./images/features-polygon.svg" class="svg"></object>
+            <p id="info2">Many systems can be characterized as dominated either by throughput limitations or by latency limitations in terms of end-user utility or experience.</p>
           </div>
           <div class="flex--vertical fadeInLeft fadeInLeft--2">
-            <object type="image/svg+xml" data="./images/features-rec.svg" class="svg"></object>
-            <p>In some cases, hard limits such as the speed of light present unique problems to such systems and nothing can be done to correct this.</p>
+            <object aria-labelledby="info3" type="image/svg+xml" data="./images/features-rec.svg" class="svg"></object>
+            <p id="info3">In some cases, hard limits such as the speed of light present unique problems to such systems and nothing can be done to correct this.</p>
           </div>
         </div>
         <img class="features__image" src="./images/features-image.webp" alt="Oasis chart" />
@@ -149,8 +145,8 @@
             <p>A telecom satellite in geosynchronous orbit imposes a path length of at least 71000 km between transmitter and receiver.</p>
           </div>
           <div class="flex--vertical fadeInRight fadeInRight--3">
-            <object type="image/svg+xml" data="./images/features-rec.svg" class="svg"></object>
-            <p>This delay can be very noticeable and affects satellite phone service regardless of available throughput capacity.</p>
+            <object aria-labelledby="info4" type="image/svg+xml" data="./images/features-rec.svg" class="svg"></object>
+            <p id="info4">This delay can be very noticeable and affects satellite phone service regardless of available throughput capacity.</p>
           </div>
         </div>
       </div>
@@ -274,10 +270,9 @@
       </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js" integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/libs/Chart.min.js"></script>
+    <script src="./js/libs/tiny-slider.js"></script>
+    <script src="./js/libs/noframework.waypoints.min.js"></script>
 
     <script type="text/javascript" src="./js/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->

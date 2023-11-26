@@ -16,10 +16,7 @@
         loop: false,
         rewind: false,
         mode: "gallery",
-        controlsText: [
-          '<i class="fas fa-angle-left"></i>',
-          '<i class="fas fa-angle-right"></i>',
-        ],
+        controlsText: ['<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>', '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>'],
         nav: false,
       });
       slider.events.on("transitionEnd", () => {
@@ -27,12 +24,28 @@
       });
       App.calcTimeAgo();
     },
+    fromNow: (dateArr) => {
+      // Date format: [year, month, day]
+      const date = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
+      const now = new Date();
+      const diff = now.getTime() - date.getTime();
+      const seconds = Math.floor(diff / 1000);
+      const minutes = Math.floor(seconds / 60);
+      const hours = Math.floor(minutes / 60);
+      const days = Math.floor(hours / 24);
+      const months = Math.floor(days / 30);
+      const years = Math.floor(months / 12);
+
+      if (years > 0) return years + " years ago";
+      if (months > 0) return months + " months ago";
+      if (days > 0) return days + " days ago";
+    },
     calcTimeAgo: () => {
       const items = App.$.getTimeAgoItems();
       if (items.length) {
         for (var i = 0; i < items.length; i++) {
           const date = items[i].getAttribute("data-date");
-          items[i].innerHTML = moment(date.split("-")).fromNow();
+          items[i].innerHTML = App.fromNow(date.split("-"));
         }
       }
     },
