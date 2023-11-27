@@ -6,7 +6,6 @@
     "dev": "vite",
     "build": "npm run images && vite build",
     "preview": "vite preview",
-    "start": "http-server ./src -p 8080",
     "lhci": "lhci autorun --config=lighthouserc.js",
     "images": "npm run images:resize && npm run images:compress",
     "images:resize": "node scripts/resize.mjs",
