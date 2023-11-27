@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OASIS</title>
+    <meta name="description" content="Error tracking and monitor" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="OASIS - Error tracking and monitor" />
+    <meta itemprop="description" content="Error tracking and monitor" />
+    <meta itemprop="image" content="./images/hero-phone.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OASIS - Error tracking and monitor" />
+    <meta property="og:description" content="Error tracking and monitor" />
+    <meta property="og:image" content="./images/hero-phone.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OASIS - Error tracking and monitor" />
+    <meta name="twitter:description" content="Error tracking and monitor" />
+    <meta name="twitter:image" content="./images/hero-phone.png" />
+
     <link rel="stylesheet" href="./css/tiny-slider.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OASIS</title>
-    <meta name="description" content="Oasis is a monitoring system that helps you to monitor your server status and prevent incidents. It is a free status page for monitoring your server status. It is easy to integrate and setup. It works on phone and all devices. It is a reliable monitoring system. It is easy to track all your stats. It is trusted by many companies. It has brought clarity to our architecture. It provides a robust synopsis of our service statuses. It has a crash rate of 89%. It has an error reporting API uptime of 100. It has an average latency of 1.98ms. It has an A/B split of A/B. It has a general API of 81rps. It has a data access API of 93%. It has a health check on the latest selected time range of OK. It has an average ping up time of selected time range of 95%. It has an average latency in the selected time range of 19ms. It has an average packet lost in selected time range of 0.1. It has an error rate of bit transmission in selected time range of 0.02%." />
   </head>
   <body>
     <nav class="nav--desktop">
@@ -48,7 +69,15 @@
           </a>
         </div>
         <div class="flex_child--horizontal fadeInUp">
-          <img src="./images/hero-phone.webp" alt="Oasis chart" loading="lazy" />
+          <picture>
+            <source srcset="./images/hero-phone-large.webp" media="(min-width: 1800px)" />
+            <source srcset="./images/hero-phone-medium.webp" media="(min-width: 640px)" />
+            <source srcset="./images/hero-phone-small.webp" media="(min-width: 450px)" />
+            <source srcset="./images/hero-phone-large.png" media="(min-width: 1800px)" />
+            <source srcset="./images/hero-phone-medium.png" media="(min-width: 640px)" />
+            <source srcset="./images/hero-phone-small.png" media="(min-width: 450px)" />
+            <img src="./images/hero-phone.png" alt="hero phone" loading="lazy" />
+          </picture>
         </div>
       </div>
     </section>
@@ -57,15 +86,40 @@
       <div class="flex--vertical">
         <div class="flex_child--vertical flex--horizontal summary__lists">
           <div class="summary__list flex--horizontal fadeIn">
-            <img src="./images/summary-github.webp" alt="Github Logo" />
+            <picture>
+              <source srcset="./images/summary-github-large.webp" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-github-medium.webp" media="(min-width: 640px)" />
+              <source srcset="./images/summary-github-small.webp" media="(min-width: 450px)" />
+              <source srcset="./images/summary-github-large.png" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-github-medium.png" media="(min-width: 640px)" />
+              <source srcset="./images/summary-github-small.png" media="(min-width: 450px)" />
+              <img src="./images/summary-github.png" alt="summary github" loading="lazy" />
+            </picture>
+
             <p>works on phone and all devices</p>
           </div>
           <div class="summary__list flex--horizontal fadeIn">
-            <img src="./images/summary-cpu.webp" alt="CPU Icon" />
+            <picture>
+              <source srcset="./images/summary-cpu-large.webp" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-cpu-medium.webp" media="(min-width: 640px)" />
+              <source srcset="./images/summary-cpu-small.webp" media="(min-width: 450px)" />
+              <source srcset="./images/summary-cpu-large.png" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-cpu-medium.png" media="(min-width: 640px)" />
+              <source srcset="./images/summary-cpu-small.png" media="(min-width: 450px)" />
+              <img src="./images/summary-cpu.png" alt="summary cpu" loading="lazy" />
+            </picture>
             <p>free status page for monitoring</p>
           </div>
           <div class="summary__list flex--horizontal fadeIn">
-            <img src="./images/summary-dollar.webp" alt="Dollar sign" />
+            <picture>
+              <source srcset="./images/summary-dollar-large.webp" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-dollar-medium.webp" media="(min-width: 640px)" />
+              <source srcset="./images/summary-dollar-small.webp" media="(min-width: 450px)" />
+              <source srcset="./images/summary-dollar-large.png" media="(min-width: 1800px)" />
+              <source srcset="./images/summary-dollar-medium.png" media="(min-width: 640px)" />
+              <source srcset="./images/summary-dollar-small.png" media="(min-width: 450px)" />
+              <img src="./images/summary-dollar.png" alt="summary dollar" loading="lazy" />
+            </picture>
             <p>easy integrations and setup</p>
           </div>
         </div>
@@ -134,7 +188,16 @@
             <p id="info3">In some cases, hard limits such as the speed of light present unique problems to such systems and nothing can be done to correct this.</p>
           </div>
         </div>
-        <img class="features__image" src="./images/features-image.webp" alt="Oasis chart" />
+        <picture>
+          <source srcset="./images/features-image-large.webp" media="(min-width: 1800px)" />
+          <source srcset="./images/features-image-medium.webp" media="(min-width: 640px)" />
+          <source srcset="./images/features-image-small.webp" media="(min-width: 450px)" />
+          <source srcset="./images/features-image-large.png" media="(min-width: 1800px)" />
+          <source srcset="./images/features-image-medium.png" media="(min-width: 640px)" />
+          <source srcset="./images/features-image-small.png" media="(min-width: 450px)" />
+          <img class="features__image" src="./images/features-image.png" alt="features-image" loading="lazy" />
+        </picture>
+
         <div class="features__right aligner flex--vertical">
           <div class="flex--vertical fadeInRight fadeInRight--1">
             <object type="image/svg+xml" data="./images/features-star.svg" class="svg"></object>
@@ -218,12 +281,12 @@
         <h3 class="font-fjalla">Trusted by</h3>
       </div>
       <div class="flex--horizontal">
-        <img src="/images/logos/1.svg" class="logo" alt="Airbnb" />
-        <img src="/images/logos/2.svg" class="logo" alt="Twitter (x)" />
-        <img src="/images/logos/3.svg" class="logo" alt="Eventbrite" />
-        <img src="/images/logos/4.svg" class="logo" alt="Netflix" />
-        <img src="/images/logos/5.svg" class="logo" alt="Google" />
-        <img src="/images/logos/6.svg" class="logo" alt="Spotify" />
+        <img class="logo" src="/images/logos/1.svg" alt="logo 1" loading="lazy" />
+        <img class="logo" src="/images/logos/2.svg" alt="logo 2" loading="lazy" />
+        <img class="logo" src="/images/logos/3.svg" alt="logo 3" loading="lazy" />
+        <img class="logo" src="/images/logos/4.svg" alt="logo 4" loading="lazy" />
+        <img class="logo" src="/images/logos/5.svg" alt="logo 5" loading="lazy" />
+        <img class="logo" src="/images/logos/6.svg" alt="logo 6" loading="lazy" />
       </div>
     </section>
 
