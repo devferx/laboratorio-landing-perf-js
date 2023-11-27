@@ -400,7 +400,7 @@ section {
 
 .section--snippets:after {
   position: absolute;
-  background: url(./../images/info.png) no-repeat;
+  background: url(./../images/info-small.webp) no-repeat;
   content: "";
   top: 100px;
   right: 30px;
@@ -544,7 +544,7 @@ section {
 }
 
 .section--contact {
-  background: url("./../images/contact-bg.webp") repeat;
+  background: url("./../images/contact-bg-medium.webp") repeat;
   padding: 8rem 3rem;
   margin: 0;
   max-width: none;
@@ -671,7 +671,7 @@ section {
 .cta:after {
   position: absolute;
   content: "";
-  background-image: url(./../images/apple.webp);
+  background-image: url(./../images/apple-small.webp);
   right: 0.5rem;
   top: 20%;
   display: block;
