@@ -1,3 +1,9 @@
+import "./libs/Chart.min.js";
+import { tns } from "tiny-slider/src/tiny-slider.js";
+import "./libs/noframework.waypoints.min.js";
+
+import "../css/main.css";
+
 (() => {
   const App = {
     $: {

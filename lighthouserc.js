@@ -1,8 +1,8 @@
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "npm run start",
-      url: ["http://localhost:8080"],
+      startServerCommand: "npm run build && npm run preview",
+      url: ["http://localhost:4173"],
       numberOfRuns: 3,
       // chromePath: "/bin/google-chrome",
     },

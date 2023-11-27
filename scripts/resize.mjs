@@ -1,7 +1,7 @@
 import sharp from "sharp";
 import * as fs from "fs";
 
-const directory = "./src/images";
+const directory = "./public/images";
 
 fs.readdirSync(directory).forEach(async (file) => {
   try {

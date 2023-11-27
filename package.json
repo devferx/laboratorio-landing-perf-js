@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "dev": "vite",
+    "build": "npm run images && vite build",
+    "preview": "vite preview",
     "start": "http-server ./src -p 8080",
     "lhci": "lhci autorun --config=lighthouserc.js",
     "images": "npm run images:resize && npm run images:compress",
@@ -17,9 +20,11 @@
     "imagemin": "^8.0.1",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^8.0.0",
-    "sharp": "^0.32.6"
+    "sharp": "^0.32.6",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
-    "@lhci/cli": "0.9.0"
+    "@lhci/cli": "0.9.0",
+    "vite": "^5.0.2"
   }
 }
